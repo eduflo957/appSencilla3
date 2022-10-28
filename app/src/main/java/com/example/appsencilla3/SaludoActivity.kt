@@ -13,7 +13,8 @@ class SaludoActivity : AppCompatActivity() {
         txtSaludo = findViewById(R.id.txtSaludo)
         //Recuperamos la información pasada en el intent
         val saludo = intent.getStringExtra("NOMBRE")
+        val apellido = intent.getStringExtra("APELLIDO")
         //Construimos el mensaje a mostrar
-        txtSaludo.text = "Encantado de saludarte $saludo"
+        txtSaludo.text = "Encantado de saludarte $saludo $apellido"
     }
 }
